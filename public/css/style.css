@@ -1,0 +1,166 @@
+/* Bad Nav Challenge*/
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+main > h2:hover + nav {
+    display: flex;
+
+}
+
+/* +++++ My Lists +++++ */
+
+li + li:nth-of-type(even) {
+    font-weight: bold;
+
+}
+
+/*Here I intentionaly had it select even
+becaues the title of the list is technichaly
+the first odd li so I had to make it start on the technichaly 2nd li but
+with css magic it looks like its highlighting the odd li.*/
+
+
+li:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'subhead', sans-serif;
+    letter-spacing: 2px;
+}
+
+.faveList {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'peratext', sans-serif;
+    padding: 0 0 3rem 0;
+    
+}
+
+main ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+/* +++++ Profile Picture */
+section > a > img {
+    max-width: 25%;
+    height: auto;
+    border: 4px solid #333;
+    border-radius: 50%;
+}
+
+main section > a > img:hover {
+    animation: 1s 1 fade;
+    opacity: 0.4;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
+/* +++++ About Me +++++ */
+
+header h1 {
+    background-color: rgb(214, 180, 99);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 3px solid #333;
+    margin: 2rem 0 2rem 0;
+    font-family: 'titleHead', sans-serif;
+    /* letter-spacing: 6px; */
+    font-weight: 1;
+}
+
+
+main p {
+    width: 60%;
+    margin: 2rem auto;
+    font-size: 1.4rem;
+    font-family: 'peratext', sans-serif;
+
+}
+
+main {
+    text-align: center;
+    border: 3px solid #333;
+    background-color: rgb(214, 180, 99);
+    margin: 0px 10rem 0 10rem;
+    border-radius: 20px;
+}
+
+/* +++++ Headings +++++*/
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 3.5vh;
+    font-family: 'subhead', sans-serif;
+}
+
+h3 {
+    font-size: 2.5vh;
+    font-family: 'subhead', sans-serif;
+}
+
+/* +++++ Layout +++++ */
+
+h1,
+h2,
+h3,
+li {
+    color: #333;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body { 
+    background-image: url("../images/sasha-samusevych-9BaIYhgZjgw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(214, 180, 99);
+    
+}
+
+footer {
+    background-color: rgb(214, 180, 99);
+    border: 3px solid #333;
+    border-radius: 5vw;
+    margin: 1.5vw 0 0 0;
+    padding: 1.1vw;
+    font-family: 'peratext', sans-serif;
+    font-size: 1rem;
+}
+
+/* +++++ Fonts +++++ */
+
+@font-face {
+    font-family: 'titleHead';
+    src: url('../Fonts/Neonblitz.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'subhead';
+    src: url('../Fonts/Bellerose.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'peratext';
+    src: url('../Fonts/Exo2-Regular.ttf') format('truetype');
+  }
