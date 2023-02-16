@@ -6,14 +6,12 @@ nav {
 
 main > h2:hover + nav {
     display: flex;
-
 }
 
 /* +++++ My Lists +++++ */
 
 li + li:nth-of-type(even) {
     font-weight: bold;
-
 }
 
 /*Here I intentionaly had it select even
@@ -132,7 +130,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(214, 180, 99);
-    
 }
 
 footer {
@@ -152,12 +149,12 @@ footer {
     src: url('../Fonts/Neonblitz.ttf') format('truetype');
   }
 
-  @font-face {
+@font-face {
     font-family: 'subhead';
     src: url('../Fonts/Bellerose.ttf') format('truetype');
   }
 
-  @font-face {
+@font-face {
     font-family: 'peratext';
     src: url('../Fonts/Exo2-Regular.ttf') format('truetype');
   }
