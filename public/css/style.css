@@ -1,4 +1,4 @@
-/* Bad Nav Challenge*/
+/* Bad Nav Challenge */
 nav {
     display: none;
     flex-direction: column;
@@ -14,11 +14,10 @@ li + li:nth-of-type(even) {
     font-weight: bold;
 }
 
-/*Here I intentionaly had it select even
+/* Here I intentionaly had it select even
 becaues the title of the list is technichaly
 the first odd li so I had to make it start on the technichaly 2nd li but
 with css magic it looks like its highlighting the odd li.*/
-
 
 li:nth-child(1) {
     font-size: 1.5rem;
@@ -53,31 +52,7 @@ main section > a > img:hover {
     opacity: 0.4;
 }
 
-@keyframes fade {
-
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.4;
-    }
-}
-
-
 /* +++++ About Me +++++ */
-
-header h1 {
-    background-color: rgb(214, 180, 99);
-    padding: 1rem;
-    border-radius: 20px;
-    border: 3px solid #333;
-    margin: 2rem 0 2rem 0;
-    font-family: 'titleHead', sans-serif;
-    font-weight: 1;
-}
-
-
 main p {
     width: 60%;
     margin: 2rem auto;
@@ -98,6 +73,16 @@ h1 {
     font-size: 4vw;
 }
 
+header h1 {
+    background-color: rgb(214, 180, 99);
+    padding: 1rem;
+    border-radius: 20px;
+    border: 3px solid #333;
+    margin: 2rem 0 2rem 0;
+    font-family: 'titleHead', sans-serif;
+    font-weight: 1;
+}
+
 h2 {
     font-size: 3.5vh;
     font-family: 'subhead', sans-serif;
@@ -109,7 +94,6 @@ h3 {
 }
 
 /* +++++ Layout +++++ */
-
 h1,
 h2,
 h3,
@@ -143,18 +127,32 @@ footer {
 }
 
 /* +++++ Fonts +++++ */
-
+/* main title font */
 @font-face {
     font-family: 'titleHead';
     src: url('../Fonts/Neonblitz.ttf') format('truetype');
   }
 
+/* sub heading font */
 @font-face {
     font-family: 'subhead';
     src: url('../Fonts/Bellerose.ttf') format('truetype');
   }
 
+/* peragraph font */
 @font-face {
     font-family: 'peratext';
     src: url('../Fonts/Exo2-Regular.ttf') format('truetype');
   }
+
+/* +++++ Animations +++++ */
+@keyframes fade {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
